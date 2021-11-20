@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Api gratis & tools online">
+    <meta name="keywords" content="freeapi,restapi,listapi,apigratis,download vidio youtube downloader,fb downloader,tools online">
+    <meta name="author" content="Fahmi Devs">
+    <title>FreeAPI|FahmiDevs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/costum.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="sidenav">
+       <a href="javascript:home()"><i class="bi bi-house-fill"></i>&nbsp;Home</a>
+       <a href="javascript:api()"><i class="bi bi-code-slash"></i>&nbsp;Api</a>
+       <a href="javascript:tools()"><i class="bi bi-tools"></i>&nbsp;Tools</a>
+       <a href="javascript:docs()"><i class="bi bi-file-text-fill"></i>&nbsp;Docs</a>
+       <a href="https://saweria.co/FahmiDev"><i class="bi bi-cash-coin"></i>&nbsp;Donate</a>
+       <a href="https://api.whatsapp.com/send/?phone=62881024612817&text=hi+fahmigans:v"><i class="bi bi-whatsapp"></i>&nbsp;Message</a>
+    </div>
+    <div class="main" id="doc" style="display:none; margin:100px auto;">
+       <div class="container" style="margin-left: 230px;">
+          <h1 class="text-center judul p-3">Documentation</h1>
+          <div class="card m-4">
+             <div class="card-body text-light">
+                <pre class="code" style="font-family: courier new; border-radius:7px;"><label>Python</label><code>import requests<br>params={"key":"value"}<br>requests.get("url api",params=params).text</code></pre>
+             </div>
+          </div>
+          <div class="card m-4">
+             <div class="card-body text-light">
+                <pre class="code" style="font-family: courier new; border-radius:7px;"><label>Php</label><code>&lt;?php<br>$ch = curl_init();<br>$parameters = array("key" => "value");<br>$data = http_build_query($parameters);<br>$url = "Url api"."?".$data;<br>curl_setopt($ch, CURLOPT_URL, $url);<br>curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);<br>$output = curl_exec($ch);<br>curl_close($ch);<br>echo $output;<br>?&gt;</code></pre>
+             </div>
+          </div>
+          <div class="card m-4">
+             <div class="card-body text-light">
+                <pre class="code" style="font-family: courier new; border-radius:7px;"><label>Nodejs</label><code>const https = require('https')<br>const querystring = require('querystring');<br>const parameters = {'key':'value'}<br>const get_request_args = querystring.stringify(parameters);<br>const options = { <br>hostname: 'ainxbot-id.herokuapp.com',<br>port: 443,<br>path: 'endpoint api'+get_request_args,<br>method: 'GET',<br>}<br>const req = https.request(options, res => {<br>console.log(`statusCode: ${res.statusCode}`)<br>res.on('data', d => {<br>process.stdout.write(d)<br>})<br>})<br>req.on('error', error => {<br>console.error(error)<br>})<br>req.end()</code></pre>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="main" id="api" style="display:none; margin:100px auto;">
+       <div class="container" style="margin-left: 230px;">
+          <h1 class="text-center judul p-3">List API</h1>
+          <div class="container-sm">
+             <div class="card m-4">
+                <div class="card-body text-light">
+                   <h5 class="fs-3 ms-4 pt-2 titleapi">Text To Gif</h5>
+                   <pre class="code"><label>GET</label><code>https://ainxbot-api.herokuapp.com/api/text-to-gif</code></pre>
+                   <p class="ms-4 fs-3 list">parameters : "text"</p>
+                </div>
+             </div>
+             <div class="card m-4">
+                <div class="card-body text-light">
+                   <h5 class="fs-3 ms-4 pt-2 titleapi">Text Encode</h5>
+                   <pre class="code"><label>GET</label><code>https://ainxbot-api.herokuapp.com/api/encode</code></pre>
+                   <p class="ms-4 fs-3 list">parameters : "text"</p>
+                </div>
+             </div>
+             <div class="card m-4">
+                <div class="card-body text-light">
+                   <h5 class="fs-3 ms-4 pt-2 titleapi">Proxy List</h5>
+                   <pre class="code"><label>GET</label><code>https://ainxbot-api.herokuapp.com/api/proxy-list</code></pre>
+                </div>
+             </div>
+             <div class="card m-4">
+                <div class="card-body text-light">
+                   <h5 class="fs-3 ms-4 pt-2 titleapi">Api Nulis</h5>
+                   <pre class="code"><label>GET</label><code>https://ainxbot-api.herokuapp.com/api/nulis</code></pre>
+                   <p class="ms-4 fs-3 list">parameters : "text"</p>
+                </div>
+             </div>
+             <div class="card m-4">
+                <div class="card-body text-light">
+                   <h5 class="fs-3 ms-4 pt-2 titleapi">Api Wikipedia</h5>
+                   <pre class="code"><label>GET</label><code>https://ainxbot-api.herokuapp.com/api/wikipedia</code></pre>
+                   <p class="ms-4 fs-3 list">parameters : "query"</p>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="main" id="tools" style="display:none; margin: 100px auto;">
+       <div class="container" style="margin-left:230px;">
+          <h1 class="text-center judul p-3">List Tools</h1>
+          <div class="card" style="float:left; margin-right: 10px; margin-bottom: 20px;">
+             <div class="card-body text-light">
+                <h5 class="titleapi">Download Vidio Facebook</h5>
+                <div class="input-group">
+                   <input type="text" id="url_fb" class="form" style="font-size:20px; font-family: monaco;" placeholder="Url vidio..." aria-label="Url vidio..." aria-describedby="load1">
+                   <button id="load1" type="button" class="btn btn-danger" onclick="dvf()"><i class="bi bi-search"></i></button>
+                </div>
+             </div>
+          </div>
+          <div class="card" style="float:right; margin-bottom: 20px;">
+             <div class="card-body text-light">
+                <h5 class="titleapi">Download Vidio Youtube</h5>
+                <div class="input-group">
+                   <input type="text" id="url_mp4" class="form" style="font-size:20px; font-family: monaco;" placeholder="Url vidio..." aria-describedby="load2">
+                   <button id="load2" type="button" class="btn btn-danger" onclick="mp4()"><i class="bi bi-search"></i></button>
+                </div>
+             </div>
+         </div>
+         <br>
+         <div class="card" style="float:left; margin-right: 10px; margin-bottom: 20px;">
+            <div class="card-body text-light">
+               <h5 class="titleapi">Download Music Youtube</h5>
+               <div class="input-group">
+                   <input type="text" id="url_mp3" class="form" style="font-size:20px; font-family: monaco;" placeholder="Url vidio..." aria-describedby="load3">
+                   <button id="load3" type="button" class="btn btn-danger" onclick="mp3()"><i class="bi bi-search"></i></button>
+               </div>
+            </div>
+         </div>
+         <div class="card" style="float:right; margin-bottom: 20px;">
+            <div class="card-body text-light">
+               <h5 class="titleapi">SPAM Sms Wa Call</h5>
+               <div class="input-group">
+                  <input type="text" id="nomor" class="form" style="font-size: 20px; font-family: monaco;" placeholder="example:8xxxx" aria-describedby="load4">
+                  <button id="load4" type="button" class="btn btn-danger" onclick="spam()"><i class="bi bi-send"></i></button>
+               </div>
+            </div>
+         </div>
+         <div class="card" style="float:left; margin-left: 130px">
+            <div class="card-body text-light">
+               <h5 class="titleapi">Text To Speech</h5>
+               <input type="text" class="form" style="font-size: 20px; font-family: monaco;" id="text" placeholder="text here..." required>
+               <div class="input-group">
+                  <select id="lg" class="form-select" aria-label="Default select example">
+                     <option value="UK English Female">UK English Female</option>
+                     <option value="UK English Male">UK English Male</option>
+                     <option value="US English Female">US English Female</option>
+                     <option value="US English Male">US English Male</option>
+                     <option value="Arabic Male">Arabic Male</option>
+                     <option value="Armenian Male">Armenian Male</option>
+                     <option value="Australian Female">Australian Female</option>
+                     <option value="Brazilian Portuguese Female">Brazilian Portuguese Female</option>
+                     <option value="Chinese Female">Chinese Female</option>
+                     <option value="Hindi Female">Hindi Female</option>
+                     <option value="Indonesian Female">Indonesian Female</option>
+                     <option value="Indonesian Male">Indonesian Male</option>
+                     <option value="Japanese Female">Japanese Female</option>
+                     <option value="Italian Female">Italian Female</option>
+                     <option value="Korean Female">Korean Female</option>
+                  </select>
+                  <button type="button" class="btn btn-danger" style="border-right: 1px solid black;" onclick="play();"><i class="bi bi-play"></i></button>
+                  <button type="button" class="btn btn-danger" style="border-left: 1px solid black;" onclick="stop();"><i class="bi bi-stop"></i></button>
+               </div>
+            </div>
+         </div>
+       </div>
+    </div>
+    <div id="home" class="main" style="margin: 500px auto;">
+       <div class="container">
+          <div style="align-items:center;text-decoration:none;font-display:auto; margin-left: 30%">
+             <span class="text-light" style="font-family: arial; font-size: 40px">Hi there👋,</span>
+             <h1 class="text-light" style="font-family: monaco; font-size: 40px; font-weight: bold;">I'm FahmiApz</h1>
+             <p style="font-family: courier new; font-size: 20px;" class="typewrite text-light" data-period="16000" data-type='["I`m Beginner.I really like<br>beautiful pages but I can`t<br>beautify pages!!"]'></p>
+          </div>
+          <div class="col text-center pt-4 mt-4" style="font-size: 40px; font-family: monaco; text-align: center;">
+             <a href="https://facebook.com/kang.ngeue.313"><i class="me-2 text-light bi bi-facebook"></i></a>
+             <a href="https://youtube.com/channel/UCUO09r6yrKWPQc7K4kqbBiA"><i class="me-2 text-light bi bi-youtube"></i></a>
+             <a href="https://github.com/Ainx-BOT"><i class="text-light bi bi-github"></i></a>
+          </div>
+       </div>
+    </div>
+    <footer><embed name="music" src="/music.mp3" width="5" loop="true" autostart="true"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="/js/write.js"></script>
+    <script src="/js/ainx.js"></script> 
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=jPsYPNJa"></script>
+  </body>
+</html>
