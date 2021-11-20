@@ -1,0 +1,85 @@
+.card {
+background:  #1a3846;
+color: white;
+font-family: arial;
+margin:0;
+}
+.judul {
+font-family: 'Kreon', serif; 
+vertical-align: middle;
+font-size: 40px;
+font-weight: bold;
+color: white;
+text-decoration:underline;
+text-decoration-color:#dc3545;
+text-underline-position: under;
+}
+.list{
+font-size: 20px;
+font-family: courier new;
+line-height:10px;
+}
+.titleapi{
+font-family: monaco;
+font-size: 20px;
+color: white;
+text-decoration:underline;
+text-decoration-color:#dc3545;
+text-underline-position: under;
+}
+pre {
+    background:  #dc3545;
+    white-space: pre;
+    word-wrap: break-word;
+    overflow: auto;
+    top:0;
+    right:0;
+}
+pre.code {
+    margin: 20px 25px;
+    border-radius: 5px;
+    border: 1px solid #1a3846;
+    position: relative;
+}
+pre.code label {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+    position: absolute;   
+    left: 1px;
+    top: 13px;
+    text-align: center;
+    width: 60px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
+}
+pre.code code {
+    font-family: "Inconsolata","Monaco","Consolas","Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
+    display: block;
+    margin: 0 0 0 60px;
+    padding: 15px 16px 14px;
+    border-left: 1px solid #d35965;
+    overflow-x: auto;
+    font-size: 17px;
+    line-height: 19px;
+    color: #FFFFFFFF;
+    background:	#d35965;
+}
+.form{
+background: whitesmoke;
+color: black;
+border: 1px solid #d35965;
+}
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+:-ms-input-placeholder { 
+ color: grey;
+}
+::-ms-input-placeholder { 
+ color: grey;
+}
